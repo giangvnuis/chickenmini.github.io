@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercise 1 - JavaScript</title>
+  <script>
+    // Prompt user to enter number A and B
+    var txta = prompt("Enter number A");
+    var txtb = prompt("Enter number B");
+
+    // Validate number A
+    if (txta === null || txta.trim() === "" || isNaN(txta)) {
+      alert("Number A is formatted incorrect");
+    }
+    // Validate number B
+    else if (txtb === null || txtb.trim() === "" || isNaN(txtb)) {
+      alert("Number B is formatted incorrect");
+    }
+    // If both are valid numbers
+    else {
+      var numA = parseFloat(txta);
+      var numB = parseFloat(txtb);
+      var result = numA + numB;
+      alert("Result:\n" + numA + " + " + numB + " = " + result);
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>
